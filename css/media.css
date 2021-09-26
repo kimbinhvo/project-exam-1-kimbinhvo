@@ -34,7 +34,7 @@
         margin: -10px 15%;
     }
 
-    .carousel-container h2 {
+    .carousel-container h1 {
         font-size: 32px;
     }
 
@@ -141,7 +141,7 @@
     /* RESTAURANTS */
     /* ----------------------------- */
 
-    .intro h2 {
+    .intro h1 {
         font-size: 32px;
     }
 
@@ -220,7 +220,7 @@
         margin: -10px 25%;
     }
 
-    .carousel-container h2 {
+    .carousel-container h1 {
         font-size: 32px;
     }
 
@@ -357,7 +357,7 @@
     /* RESTAURANTS */
     /* ----------------------------- */
 
-    .intro h2 {
+    .intro h1 {
         font-size: 32px;
     }
 
@@ -414,7 +414,7 @@
 .about {
     margin: 5% 10%;
 }
-.about-text h2 {
+.about-text h1 {
     font-size: 170%;
     margin-bottom: 40px;
 }
@@ -432,7 +432,7 @@
         height: 40vh;
     }
 
-    .contact h2 {
+    .contact h1 {
         font-size: 225%;
     }
 
@@ -506,6 +506,10 @@
         margin-top: 25px;
     }
 
+    .current {
+        border-bottom: 3px solid white;
+    }
+
     .fas {
         display: none;
     }
@@ -537,7 +541,7 @@
         margin: -10px 30%;
     }
 
-    .carousel-container h2 {
+    .carousel-container h1 {
         font-size: 32px;
     }
 
@@ -547,20 +551,6 @@
 
     .carousel-container p{
         font-size: 18px;
-    }
-
-    .welcome {
-        height: 70vh;
-    }
-    
-    .welcome h1 {
-        font-size: 225%;
-        margin-top: 450px;
-    }
-    
-    .welcome p {
-        font-size: 175%;
-        margin-top: 500px;
     }
 
     .main-blog {
@@ -678,7 +668,7 @@
     /* RESTAURANTS */
     /* ----------------------------- */
 
-    .intro h2 {
+    .intro h1 {
         font-size: 32px;
     }
 
@@ -746,7 +736,7 @@
     .about {
         margin: 5% 15%;
     }
-    .about-text h2 {
+    .about-text h1 {
         font-size: 200%;
         margin-bottom: 60px;
     }
@@ -764,7 +754,7 @@
         height: 50vh;
     }
 
-    .contact h2 {
+    .contact h1 {
         font-size: 240%;
         margin-top: 30px;
     }
@@ -842,6 +832,10 @@
         margin-top: 25px;
     }
 
+    .current {
+        border-bottom: 4px solid white;
+    }
+
     .fas {
         display: none;
     }
@@ -873,7 +867,7 @@
         margin: -10px 35%;
     }
 
-    .carousel-container h2 {
+    .carousel-container h1 {
         font-size: 32px;
     }
 
@@ -1022,7 +1016,7 @@
     /* ----------------------------- */
 
 
-    .intro h2 {
+    .intro h1 {
         font-size: 40px;
     }
 
@@ -1098,7 +1092,7 @@
     .about {
         margin: 5% 20%;
     }
-    .about-text h2 {
+    .about-text h1 {
         font-size: 200%;
         margin-bottom: 60px;
     }
@@ -1116,7 +1110,7 @@
         height: 60vh;
     }
 
-    .contact h2 {
+    .contact h1 {
         font-size: 250%;
         margin-top: 40px;
     }

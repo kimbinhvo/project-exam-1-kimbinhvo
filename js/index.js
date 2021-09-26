@@ -14,7 +14,7 @@ async function getPosts(url){
     console.log(posts);
 
     for(let i = 0; i < posts.length; i++){
-        
+    
         carouselContainer.innerHTML += ` <div class= "slides">
                                             <p class="number"> ${[i+1]} / 13 </p>
                                             <img src="${posts[i]._embedded['wp:featuredmedia']['0'].source_url}"> 
@@ -24,20 +24,7 @@ async function getPosts(url){
                                         </div>`; 
                           
         }
-
-     /*   for(let i = 1; i < posts.length; i++){
-           
-            carouselContainer.innerHTML += ` <div class= "slides-hide">
-                                                <p class="number"> ${[i+1]} / 13 </p>
-                                                <img src="${posts[i]._embedded['wp:featuredmedia']['0'].source_url}"> 
-                                                <h3> ${posts[i].title.rendered} </h3>
-                                                <p> ${posts[i].excerpt.rendered} </p>
-                                                <a class="cta-product" href="specific.html?id=${posts[i].id}">Read More</a>
-                                            </div>`; 
-                              
-            }
-            carouselContainer.display */
-
+ 
     for(let i = 0; i < posts.length; i++){
         if(i === 1){
             break;
@@ -123,36 +110,28 @@ async function getPosts(url){
 getPosts(baseUrl);
 
 //Carousel
-var slideIndex = 1;
-showSlides(slideIndex);
+var index = 1;
+showSlides(index);
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    showSlides(index += n);
 }
 
 function currentSlide(n) {
-    showSlides(slideIndex = n);
+    showSlides(index = n);
 }
 
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("slides");
-    if (n > slides.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = slides.length}
+    if (n > slides.length) {
+        index = 1
+    } 
+    if (n < 1) {
+        index = slides.length
+    }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"; 
     }
-    slides[slideIndex-1].style.display = "block"; 
+    slides[index-1].style.display = "block"; 
   }
-
-
-  for(let i = 0; i < posts.length; i++){
-    carouselContainer.innerHTML += 
-                                    ` <div class= "slides">
-                                        <p class"number"> ${[i+1]} / 13 </p>
-                                        <img src="${posts[i]._embedded['wp:featuredmedia']['0'].source_url}"> 
-                                        <h3> ${posts[i].title.rendered} </h3>
-                                        <p> ${posts[i].excerpt.rendered} </p>
-                                        <a class="cta-product" href="specific.html?id=${posts[i].id}">Read More</a>
-                                    </div>`; 
-    }
