@@ -1,0 +1,633 @@
+/* ----------------------------- */
+/* GLOBAL */
+/* ----------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bodoni Moda', serif;
+    margin: 10px;
+}
+
+p {
+    margin: 10px;
+}
+
+header{
+    display: grid;
+    color: rgb(255, 255, 255);
+    background-color: #111721;
+}
+
+.header p {
+    float: left;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 25px;
+}
+
+.header a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.fas{
+    float: right;
+    font-size: 175%;
+    margin: 25px;
+}
+
+.navigation {
+    display: none;
+ }
+
+#hamburger-menu {
+   display: none;
+}
+
+#hamburger-menu:checked ~ .navigation {
+    display: inline;
+}
+
+nav ul {
+    float: right;
+    background-color: #E0E4E5;
+    min-width: 100%;
+    padding-bottom: 10px;
+}
+
+nav li {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+    font-weight: 600;
+    padding: 5px 3px;
+    margin: 5px auto;
+    text-align:center;
+}
+
+.header nav li a:hover,
+.headernav li a:active {
+    color: #ff2f00;
+}
+
+
+/* ----------------------------- */
+/* CTA */
+/* ----------------------------- */
+ .cta-product {
+     margin-bottom: 5%;
+     text-decoration: none;
+     color: #000000;
+     border: 1px solid black;
+     padding: 1% 4%;
+     max-width: 20%;
+     font-size: 110%;
+     font-weight: 300;
+ }
+
+ .cta-product-carousel {
+    margin-bottom: 5%;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid black;
+    padding: 0% 4%;
+    max-width: 20%;
+    font-size: 110%;
+    font-weight: 300;
+    margin-left: 35%; 
+}
+
+ .cta-product-color {
+    margin: 0 auto 5%;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid black;
+    padding: 1% 4%;
+    max-width: 20%;
+    font-size: 110%;
+    font-weight: 300;
+}
+
+.cta-product-restaurants {
+    margin-bottom: 5%;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid black;
+    padding: 1% 4%;
+    max-width: 20%;
+    font-size: 110%;
+    font-weight: 300;
+}
+
+.cta-contact {
+    text-decoration: none;
+    color: #000000;
+    background-color:#E0E4E5;
+    border: 1px solid black;
+    padding: 1% 7%;
+    font-size: 90%;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container button{
+    font-size: 150%;
+    background-color: white;
+    border: 1px solid black;
+    font-weight: 800;
+    padding: 5px;
+}
+
+/* ----------------------------- */
+/* HOME PAGE */
+/* ----------------------------- */
+
+.carousel {
+    background-color:#D6E7E9;
+    min-height: 90vh;
+}
+
+.carousel-container {
+    position: relative;
+    margin: -10px 10%;
+}
+
+.carousel-container h2 {
+    font-size: 28px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.slides-hide {
+    display: none;
+}
+
+.number {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+.carousel-container img {
+    width: 100%;
+}
+
+.prev, 
+.next {
+    position: absolute;
+    top: 4%;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-size: 22px;
+    transition: 0.5 ease;
+  }
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-container h3{
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+}
+
+.carousel-container p{
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+}
+
+.welcome {
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    width: 100%;
+    position: relative;
+}
+
+.welcome {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Oslo.jpg");
+}
+
+.welcome h1 {
+    font-size: 175%;
+    font-style: bold;
+    font-weight: 600;
+    margin: 5%;
+    color: rgb(253, 253, 253);
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 50px;
+}
+
+.welcome p {
+    font-size: 130%;
+    font-style: italic;
+    font-weight: 300;
+    margin: 5%;
+    color: rgb(253, 253, 253);
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 50px;
+}
+
+/* ----------------------------- */
+/* MAIN BLOG */
+/* ----------------------------- */
+
+.main-blog {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    text-align: center;
+    position: relative;
+    margin:  5%;
+}
+
+.main-blog img {
+    margin: 5% auto;
+    display: block;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.main-blog h2 {
+    font-size: 120%;
+}
+
+.main-blog p {
+    font-size: 125%;
+    text-align: center;
+    margin-bottom: 5%;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* ----------------------------- */
+/* FEATURED*/
+/* ----------------------------- */
+
+.featured,
+.featured-2,
+.featured-3 {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 40px;
+    margin: 7% 5%; 
+    text-align: center;
+}
+
+.featured p,
+.featured-2 p,
+.featured-3 p {
+    font-size: 125%;
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 5%;
+}
+
+.products img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.featured-color,
+.featured-color-2 {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 5px; 
+    text-align: center;
+    background-color: #D6E7E9;
+    margin: 5% 0%;
+}
+
+.products-img img {
+    width: 90%;
+    margin-top: 5%;
+    border: 2px solid black;
+}
+
+.products-text p {
+    font-size: 125%;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 0% 5% 3%;
+}
+
+/* ----------------------------- */
+/* Footer*/
+/* ----------------------------- */
+
+footer {
+    background-color: #111721;
+    min-height: 230px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    text-align: center;
+    font-size: 70%;
+    margin-bottom: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 50px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    float: left;
+    margin: 10px 30px;
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+    list-style: none;
+    float: right;
+}
+
+.social-links li {
+    margin: 3px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: rgb(255, 255, 255);
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #E8BEB5;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+    font-size: 110%;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 135%;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram {
+    transition: color 0.2s;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+.fa-google-plus-g:hover {
+    color: #dd4b39;
+}
+
+.fa-instagram:hover {
+    color: #517fa4;
+}
+
+/* ----------------------------- */
+/* RESTAURANTS */
+/* ----------------------------- */
+
+.intro h2 {
+    margin: 5% 5% 2% 5%;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.intro p {
+    margin: 2% 5%;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.featured-restaurants {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 40px;
+    margin: 7% 5%; 
+    text-align: center;
+}
+
+.featured-restaurants p {
+    font-size: 125%;
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 5%;
+}
+
+.products-restaurants img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+/* ----------------------------- */
+/* SPECIFIC */
+/* ----------------------------- */
+
+.specific {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.specific img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.specific-grid {
+    margin: 20px 0px;
+ }
+
+ .specific-grid h2 {
+    padding-top: 5px;
+    margin: 0;
+ }
+
+ .specific-grid p {
+    padding-top: 15px;
+    margin: 0;
+ }
+
+ #image:hover{
+    transform: scale(110%);
+    position: absolute;
+    margin: 0%;
+ }
+
+/* ----------------------------- */
+/* ABOUT US */
+/* ----------------------------- */
+
+
+ .about {
+    text-align: center;
+    position: relative;
+    margin: 5%;
+}
+
+.about img {
+    margin: 5% auto;
+    display: block;
+    width: 100%;
+    border: 3px solid black;
+}
+
+.about-text h2 {
+    font-size: 140%;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.about-text p {
+    text-align: left;
+    font-size: 100%;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+/* ----------------------------- */
+/* CONTACT US */
+/* ----------------------------- */
+
+.welcome-contact {
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+}
+
+.welcome-contact {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/Oslo.jpg");
+}
+
+.contact {
+    min-height: 50vh;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.contact h2 {
+    font-size: 200%;
+    margin-top: 20px;
+}
+
+.contact-info {
+    background-color: #E0E4E5;
+    margin: 5px;
+    padding: 5px;
+}
+
+.contact-info li {
+    font-size: 120%;
+    list-style: none;
+    padding: 5px;
+}
+
+.contact h3 {
+    font-size: 150%;
+    margin-top: 50px;
+}
+
+.contact label {
+    font-weight: 800;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-areas: 'contact-form-1 contact-form-2'
+                         'form-error'; 
+    grid-gap: 10px;
+    margin: 30px auto 10px; 
+}
+
+input[id=name],
+input[id=subject],
+input[id=email] {
+    width: 60%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+textarea {
+    width: 60%;
+    height: 100px;
+    padding: 5px;
+}
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 90%;
+    margin-top: 1px;
+}
+
+.success {
+    background: green;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin: 20px 50px;
+    font-size: 80%;
+}
+
+.fail {
+    background: red;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    margin: 20px 50px;
+    font-size: 80%;
+}
